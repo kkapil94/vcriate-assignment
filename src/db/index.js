@@ -1,12 +1,12 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 export const connectDB = async () => {
   mongoose
-    .connect("mongodb://0.0.0.0:27017")
+    .connect('mongodb://0.0.0.0:27017/vcriate-assignment')
     .then(() => {
-      console.log("MongoDB connected");
+      console.log('MongoDB connected');
     })
-    .catch((err) => {
+    .catch(err => {
       console.log(err);
     });
 };
