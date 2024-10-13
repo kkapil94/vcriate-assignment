@@ -2,14 +2,6 @@
 
 This project is a RESTful API for a Multiple Choice Question (MCQ) quiz application built with Node.js, Express, and MongoDB.
 
-## Deployed API
-
-The API is deployed and accessible at:
-
-https://vcriate-assignment-g3iw.onrender.com
-
-You can use this URL as the base for all API endpoints described below.
-
 ## Features
 
 - User authentication (register, login, logout)
@@ -24,6 +16,28 @@ Before you begin, ensure you have met the following requirements:
 - Node.js (v14 or later)
 - MongoDB (v4 or later)
 - npm (usually comes with Node.js)
+
+## Deployed API
+
+The API is deployed and accessible at:
+
+https://vcriate-assignment-g3iw.onrender.com
+
+You can use this URL as the base for all API endpoints described below.
+
+## Docker Installation
+
+1. Pull the Docker image:
+
+   ```
+   docker pull kapil96/mcq-api-node-app:v1
+   ```
+
+2. Run the Docker container:
+   ```
+   docker run -p 3000:3000 -e MONGODB_URI=your_mongodb_uri -e ACCESS_TOKEN_SECRET=your_secret -e REFRESH_TOKEN_SECRET=your_secret -e ACCESS_TOKEN_EXPIRY=expiry_time -e REFRESH_TOKEN_EXPIRY=expiy_time kapil96/mcq-api-node-app:v1
+   ```
+   Replace `your_mongodb_uri`, `your_secret`, `expiry_time` with appropriate values.
 
 ## Installation
 
