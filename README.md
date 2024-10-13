@@ -2,6 +2,14 @@
 
 This project is a RESTful API for a Multiple Choice Question (MCQ) quiz application built with Node.js, Express, and MongoDB.
 
+## Deployed API
+
+The API is deployed and accessible at:
+
+https://vcriate-assignment-g3iw.onrender.com
+
+You can use this URL as the base for all API endpoints described below.
+
 ## Features
 
 - User authentication (register, login, logout)
