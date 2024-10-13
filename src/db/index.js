@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 export const connectDB = async () => {
   mongoose
-    .connect('mongodb://0.0.0.0:27017/vcriate-assignment')
+    .connect(process.env.MONGODB_URI)
     .then(() => {
       console.log('MongoDB connected');
     })
